@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Calculator</title>
+    <style>
+        *{
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+        .container{
+            background-color: antiquewhite;
+            color:darkslategray;
+            height:100%;
+
+        }
+        .container header{
+            font-size: larger;
+            border: solid black 0.2em;
+            text-decoration: underline;
+        }
+        .container label{
+            color: brown;
+            font-size: 1.5em;
+        }
+        .container input,.container select{
+            width: 3 placeholder="Enter the no in row"0%;
+            height:2em;
+            margin: 0.5em ;
+        }
+        .btn{
+            background-color: black;
+            border: solid whitesmoke 0.2em;
+            border-radius: 0.5em;
+            color:whitesmoke;
+            font-size: 1.5em;
+        }
+        .btn:hover{
+            background-color: brown;
+            
+        }
+        .matrix{
+            display: flex;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Matrix Calculator</h1>
+        </header>
+        <hr>
+        <div class="matrix">
+            <div class="matrix1">
+                <label for="input">Inputs for 2 x 2 matrices</label><br>
+                <input type="number" name="input" placeholder="Enter the no in row">
+                <input type="number" name="input" placeholder="Enter the no in row"><br>
+                <input type="number" name="input" placeholder="Enter the no in row">
+                <input type="number" name="input" placeholder="Enter the no in row"><br><br>
+                </div>
+            <div class="matrix1">
+            <label for="input">Inputs for 2 x 2 matrices</label><br>
+            <input type="number" name="input" placeholder="Enter the no in row">
+            <input type="number" name="input" placeholder="Enter the no in row"><br>
+            <input type="number" name="input" placeholder="Enter the no in row">
+            <input type="number" name="input" placeholder="Enter the no in row"><br><br>
+            <label for="choice">What you want to do</label><br>
+            <select name="choice" id="">
+                <option value="">Add 2 matrices</option>
+                <option value="">Subtract 2 matrices</option>
+                <option value="">Multiply 2 matrices</option>
+            </select><br>
+            </div>
+        </div>    
+        <input type="submit" value="Submit" class="btn">
+        <input type="reset" value="Reset" class="btn">    
+    </div>
+</body>
+</html>
